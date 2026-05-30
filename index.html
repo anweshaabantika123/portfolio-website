@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anwesha Abantika Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Anwesha Abantika</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skils">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+           </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Anwesha Abantika</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/anwesha-abantika-profile-pic.png" alt="Anwesha Abantika profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text_p1">Hello, I'm</p>
+            <p class="title">Anwesha Abantika</p>
+            <p class="section__text_p2">Data Analyst</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/ANWESHA_ABANTIKA_DA_RESUME.pdf')">
+                    Download Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkden Profile" class="icon" onclick="location.href='https://linkedin.com/in/anwesha-abantika-546b9a25a'">
+                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/anweshaabantika123'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p>Get To Know More</p>
+        <h1 class="title">About me</h1>
+        <div class="about-container">
+            <div class="about-details-container">
+                <div class="about-cards-row">
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education" class="icon">
+
+                        <h2>Education</h2>
+                        <p>
+                            B.Tech in Electronics & Communication Engineering <br>
+                            Roland Institute Of Technology <br>
+                            2022 - 2026
+                        </p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience" class="icon">
+                        <h2>Experience</h2>
+
+                        <p>
+                            Fresher <br>
+                            Available for Data Analyst, Data Scientist and Python related roles
+                        </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I’m Anwesha Abantika, an Electronics and Communication Engineering student with a strong passion for Data Analytics and Data Science. I enjoy working with data, solving problems, and building projects that combine technology with real-world applications.I have experience working with Python, SQL, Power BI, Excel, Data Cleaning, Data Visulaization, Exploratory Data Analysis, Feature Engineering and AWS to analyze data, create visualizations, and develop data-driven solutions.I love building projects, learning new technologies, and continuously improving my problem-solving skills. My goal is to grow as a Data Analyst and create solutions that are both practical and innovative.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+  <p class="section__text__p1">My Expertise</p>
+  <h1 class="title">Skills</h1>
+
+  <div class="skills-container">
+
+    <div class="skills-box">
+      <h2>Programming & Data</h2>
+
+      <div class="skills-list">
+        <span class="skill-badge">🐍 Python</span>
+        <span class="skill-badge">🗄️ SQL</span>
+        <span class="skill-badge">🐼 Pandas</span>
+        <span class="skill-badge">🔢 NumPy</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <h2>Data Visualization</h2>
+
+      <div class="skills-list">
+        <span class="skill-badge">📊 Power BI</span>
+        <span class="skill-badge">📑 Excel</span>
+        <span class="skill-badge">📈 Matplotlib</span>
+        <span class="skill-badge">📉 Seaborn</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <h2>Cloud & Analytics</h2>
+
+      <div class="skills-list">
+        <span class="skill-badge">☁️ AWS</span>
+        <span class="skill-badge">📋 Data Analysis</span>
+        <span class="skill-badge">🧹 Data Cleaning</span>
+        <span class="skill-badge">📊 Dashboard Development</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+   <script src="script.js"></script> 
+</body>
+</html>
